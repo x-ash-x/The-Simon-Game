@@ -1,0 +1,63 @@
+/* fonts */
+h1{
+    font-family: bungee,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+/* alignment */
+.container{
+    margin-top: 25px;
+}
+.row{
+    width : 30%;
+    margin: auto;
+}
+
+.row div{
+    height: 120px;
+    width: 120px;
+    border : 5px solid white;
+    border-radius: 20px;
+    margin: 50px auto;
+}
+
+
+/* color */
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+
+
+/* animation */
+.pressed-red {
+  box-shadow: 0 0 30px red;
+  background-color: black;
+}
+.pressed-blue {
+  box-shadow: 0 0 30px blue;
+  background-color: black;
+}
+.pressed-yellow {
+  box-shadow: 0 0 30px yellow;
+  background-color: black;
+}
+.pressed-green {
+  box-shadow: 0 0 30px green;
+  background-color: black;
+}
+
+.game-over {
+  background-color: red;
+    opacity: 0.8;
+}
