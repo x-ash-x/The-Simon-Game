@@ -71,7 +71,7 @@ h3{
 }
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 300px) {
     h1{
         font-family: bungee,sans-serif;
         font-weight: 800;
@@ -84,6 +84,31 @@ h3{
     }
     .row{
         width: 75%;
+        margin: auto;
+    }
+
+    .row div{
+        height: 100px;
+        width: 100px;
+        border : 5px solid white;
+        border-radius: 20px;
+        margin: 30px auto 0 auto;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    h1{
+        font-family: bungee,sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .start-btn{
+        margin: 20px auto;
+    }
+    .row{
+        width: 100%;
         margin: auto;
     }
 
