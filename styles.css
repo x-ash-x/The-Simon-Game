@@ -16,12 +16,17 @@ h1{
 }
 
 .row div{
-    height: 120px;
-    width: 120px;
+    height: 140px;
+    width: 140px;
     border : 5px solid white;
     border-radius: 20px;
-    margin: 50px auto;
+    margin: 30px auto 0 auto;
 }
+
+
+
+
+
 h3{
     text-align: left;
 }
@@ -63,4 +68,30 @@ h3{
 .game-over {
   background-color: red;
     opacity: 0.8;
+}
+
+
+@media screen and (max-width: 1000px) {
+    h1{
+        font-family: bungee,sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .start-btn{
+        margin: 20px auto;
+    }
+    .row{
+        width: 75%;
+        margin: auto;
+    }
+
+    .row div{
+        height: 100px;
+        width: 100px;
+        border : 5px solid white;
+        border-radius: 20px;
+        margin: 30px auto 0 auto;
+    }
 }
