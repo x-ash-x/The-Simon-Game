@@ -6,21 +6,14 @@ var gameStarted = false;
 var highScore = 0;
 
 
-// $(document).keydown(function (){
-//     if (!gameStarted) {
-//         $("h2").text("Level " + level);
-//         nextSequence();
-//         gameStarted= true;
-//     }
-// })
-
-$("button").click(function (){
+$(".start-btn").click(function (){
     if (!gameStarted) {
         $("button").text("Level " + level);
         nextSequence();
         gameStarted= true;
     }
 })
+
 
 $(".btn").click(function (event){
     var userChosenColor = event.target.id;
