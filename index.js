@@ -6,9 +6,17 @@ var gameStarted = false;
 var highScore = 0;
 
 
-$(document).keydown(function (){
+// $(document).keydown(function (){
+//     if (!gameStarted) {
+//         $("h2").text("Level " + level);
+//         nextSequence();
+//         gameStarted= true;
+//     }
+// })
+
+$("button").click(function (){
     if (!gameStarted) {
-        $("h2").text("Level " + level);
+        $("button").text("Level " + level);
         nextSequence();
         gameStarted= true;
     }
@@ -39,7 +47,7 @@ function checkAnswer(currentLevel){
         playSound("sounds/wrong.mp3")
         $("body").removeClass("bg-dark text-white");
         $("body").addClass("game-over");
-        $("h2").text("Game Over, Press Any Key to Restart");
+        $("button").text("Game Over, Press here to Restart");
 
         setTimeout(function () {
             $("body").removeClass("game-over");
@@ -68,7 +76,7 @@ function nextSequence(){
     level++;
     if(level*100>highScore)
         highScore = level*100 -100;
-    $("h2").text("Level "+level);
+    $("button").text("Level "+level);
     $("h3").text("High Score : "+highScore);
     var randomNumber = Math.floor(Math.random()*4);
     var randomColor = colors[randomNumber];
