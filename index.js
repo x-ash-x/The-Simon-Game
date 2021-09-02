@@ -67,7 +67,7 @@ function nextSequence(){
     userPattern = [];
     level++;
     if(level*100>highScore)
-        highScore = level*100;
+        highScore = level*100 -100;
     $("h2").text("Level "+level);
     $("h3").text("High Score : "+highScore);
     var randomNumber = Math.floor(Math.random()*4);
